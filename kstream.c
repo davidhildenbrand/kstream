@@ -48,7 +48,7 @@ static bool kstream_block_valid(unsigned long start_pfn)
 
 static unsigned long kstream_detect_max_pfn(void)
 {
-	unsigned long end_pfn;
+	unsigned long end_pfn = 0;
 	int i;
 
 	for_each_online_node(i)
